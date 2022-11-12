@@ -1,4 +1,4 @@
-[#][Cайт-визитка](https://iskril.github.io/cybersecurity/) аутсорсинг информационной безопасности]
+[#][Cайт-визитка](https://iskril.github.io/cybersecurity/) аутсорсинг информационной безопасности
 
 Есть адаптив до 320px
 
