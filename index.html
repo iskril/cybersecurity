@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link type="image/x-icon" href="img/favicon.png" rel="shortcut icon">
+    <link type="Image/x-icon" href="img/favicon.png" rel="icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Аутсорсинг информационной безопасности</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+    <div class="header__top">
+        <div class="logo">
+            <a class="logo__link" href="#"><img src="img/logo.png" alt="Логотип"></a>
+        </div>
+        <a class="call" href="tel:79997778899">
+            <svg class="call__icon" fill="#C9262A" width="22" height="22" viewBox="0 0 22 22" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M11 0C4.92532 0 0 4.92532 0 11C0 17.0747 4.92532 22.0001 11 22.0001C17.0748 22.0001 22 17.0746 22 11C22 4.92532 17.0748 0 11 0ZM16.8088 16.0503L15.928 16.9312C15.7708 17.0882 15.3104 17.1862 15.2956 17.1862C12.5093 17.2105 9.82648 16.1161 7.85532 14.1447C5.87876 12.167 4.78304 9.47468 4.81247 6.67898C4.81247 6.67772 4.91331 6.23047 5.07042 6.07486L5.95112 5.19402C6.27341 4.87023 6.8925 4.72392 7.32618 4.86901L7.51145 4.93081C7.94387 5.07577 8.39787 5.55389 8.51734 5.99438L8.96037 7.6204C9.07985 8.06216 8.9187 8.69064 8.59651 9.01292L8.00843 9.60109C8.58581 11.7386 10.2629 13.416 12.4008 13.9948L12.9886 13.4065C13.3124 13.0827 13.9406 12.9217 14.3815 13.041L16.0073 13.4856C16.4478 13.6067 16.9259 14.0578 17.0708 14.4901L17.1326 14.678C17.2762 15.1105 17.131 15.7295 16.8088 16.0503Z"
+                    fill="#C9262A" />
+            </svg>
+            <div class="call__text">Заказать звонок</div>
+        </a>
+    </div>
+
+    <div class="header__content">
+        <div class="container">
+            <div class="header__content-inner">
+                <div class="header__content-info">
+                    <h1 class="header__content-title" data-aos="fade-down"><span>Аутсорсинг</span> информационной безопасности</h1>
+                    <p class="header__content-desc" data-aos="fade-up">Комплексное <span>решение вопросов
+                            по кибербезопасности</span>
+                        для вашего бизнеса</p>
+                    <div class="button-box">
+                        <button class="button popup-link" data-href="feedback" type="button">Оставить заявку
+                            на экспресс-консультацию</button>
+                    </div>
+                    <!--modal start -->
+                    <div id="feedback" class="popup" role="alert">
+                        <div class="popup__body feedback">
+                            <div class="popup__content">
+                                <button class="popup__close close-popup" aria-label="Кнопка закрыть модальное окно"
+                                    type="button"></button>
+                                <div class="feedback__popup">
+                                    <form class="feedback__form form" action="#" method="post">
+                                        <fieldset>
+                                            <legend class="feedback__heading">
+                                                Мы в скором времени с вами свяжемся
+                                            </legend>
+                                            <label>
+                                                <span class="feedback__name-text feedback__text">Ваше имя</span>
+                                                <input type="text" name="feedback-name">
+                                            </label>
+                                            <label>
+                                                <span class="feedback__phone-text feedback__text">Ваш телефон</span>
+                                                <input type="tel" name="feedback-phone"
+                                                    placeholder="+7 (777) 777-77-77">
+                                            </label>
+                                        </fieldset>
+                                        <fieldset>
+                                            <legend class="feedback__heading">
+                                                Как с вами связаться?
+                                            </legend>
+                                            <label class="feedback__label">
+                                                <input type="radio" name="feedback" value="messendge" checked>
+                                                <span class="feedback__messendge-text feedback__text">Написать в
+                                                    WhatsApp</span>
+                                            </label>
+                                            <label class="feedback__label">
+                                                <input type="radio" name="feedback" value="call">
+                                                <span class="feedback__call-text feedback__text">Позвонить</span>
+                                            </label>
+                                        </fieldset>
+                                        <button class="feedback__button" type="submit">Отправить</button>
+                                        <p class="feedback__privacy-policy">Нажимая на кнопку вы соглашаетесь на
+                                            обработку<a href="#"
+                                                aria-label="Ссылка на страницу персональных данных">персональных
+                                                данных</a></p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- modal close-->
+                </div>
+                <div class="header__content-decor" data-aos="flip-right"><img src="img/header.png"></div>
+            </div>
+        </div>
+    </div>
+
+</header>
+        <section class="advantage">
+    <div class="container">
+        <ul class="advantage__list" data-aos="fade-up">
+            <li class="advantage__list-item">
+                <div class="advantage__list-item__icon --serteficate"></div>
+                <div class="advantage__list-item__desc">10 лет опыта</div>
+            </li>
+            <li class="advantage__list-item">
+                <div class="advantage__list-item__icon --cyber-security"></div>
+                <div class="advantage__list-item__desc">Правовые, технические
+                    и организационные
+                    меры</div>
+            </li>
+            <li class="advantage__list-item">
+                <div class="advantage__list-item__icon --technical-support"></div>
+                <div class="advantage__list-item__desc">Техподдержка
+                    в течении
+                    60 минут</div>
+            </li>
+            <li class="advantage__list-item">
+                <div class="advantage__list-item__icon --stamp"></div>
+                <div class="advantage__list-item__desc">Финансовые
+                    гарантии</div>
+            </li>
+            <li class="advantage__list-item">
+                <div class="advantage__list-item__icon --money"></div>
+                <div class="advantage__list-item__desc">100% успешное
+                    прохождение проверок
+                    контролирующими органами</div>
+            </li>
+        </ul>
+    </div>
+</section>
+        <section class="attention">
+    <div class="container">
+        <h3 class="title" data-aos="fade-down">Обратите внимание на информационную безопасность вашего бизнеса, если…</h3>
+        <ul class="attention__list" data-aos="fade-up">
+            <li class="attention__item"><b>В вашей компании 50+ сотрудников,</b> которые работают за компьютерами</li>
+            <li class="attention__item"><b>У вас есть финансовые учетные системы,</b> системы по работе с клиентами,
+                специфические IT-системы</li>
+            <li class="attention__item"><b>Бизнес зависит от исправной работы</b> компьютеров и IT-систем</li>
+            <li class="attention__item"><b>В штате есть системный администратор</b> или IT-отдел, но при этом нет
+                специалиста
+                по информационной безопасности</li>
+            <li class="attention__item"><b>У ваших IT-специалистов нет времени,</b> чтобы заниматься информационной
+                безопасностью, а у вас нет средств их учить
+                и доплачивать им эту за эту работу</li>
+            <li class="attention__item"><b>В вашей компании 50+ сотрудников,</b> которые работают за компьютерами</li>
+        </ul>
+        <p class="attention__text" data-aos="fade-down"><span>Решение</span> — передать задачи по защите информации на аутсорсинг.
+        </p>
+    </div>
+</section>
+        <section class="safety-info">
+    <div class="container">
+        <h3 class="title" data-aos="flip-left">
+            В 2022 году безопасность практически каждого бизнеса зависит от
+            IT-инфраструктуры
+        </h3>
+        <div class="safety-info__wrapper" data-aos="fade-up">
+            <p class="safety-info__subtitle"><b>После активного перехода в онлайн в 2020</b>практически <span>в каждом
+                    бизнесе растет
+                    количество облачных сервисов,</span> систем, инструментов, которые компании используют для своих
+                задач.
+            </p>
+            <div class="safety-info__img-box">
+                <img src="img/icons/cloud.png" alt="image">
+            </div>
+        </div>
+        <div class="block-info">
+            <p class="block-info__title">Сегодня как никогда безопасность бизнеса напрямую зависит от безопасности
+                IT-инфраструктуры:
+            </p>
+            <div class="block-info__wrapper" data-aos="fade-up">
+                <ul class="block-info__list">
+                    <li class="block-info__item"><span>Бухгалтерский учет</span></li>
+                </ul>
+                <ul class="block-info__list">
+                    <li class="block-info__item"><span>Управленческий учет</span></li>
+                </ul>
+                <ul class="block-info__list">
+                    <li class="block-info__item"><span>Каналы привлечения клиентов и маркетинговые инструменты:
+                            сайты, соцсети, рекламные кабинеты, мессенджеры</span></li>
+                </ul>
+                <ul class="block-info__list">
+                    <li class="block-info__item"><span>Сервисы для сбора заявок в CRM-системах</span></li>
+                </ul>
+                <ul class="block-info__list">
+                    <li class="block-info__item"><span>ERP-система, документооборот, складская система, системы
+                            управления производством (MES, SCADA, АСУ)</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="safety-info__desc">Чем крупнее компания, тем выше риски.</div>
+    </div>
+
+</section>
+        <section class="danger">
+    <div class="container">
+        <h3 class="title" data-aos="flip-right">
+            Нарушение информационной безопасности влечет за собой финансовый ущерб, срывы контрактов, штрафы, черные
+            списки, репутационный ущерб
+        </h3>
+        <div class="block-info danger">
+            <div class="block-info__wrapper" data-aos="fade-up">
+                <ul class="block-info__list">
+                    <li class="block-info__item"><span><b>Кража конфиденциальных данных</b></span></li>
+                </ul>
+                <ul class="block-info__list">
+                    <li class="block-info__item"><span><b>Кража клиентской базы,</b> данных
+                            поставщиков, проектной документации, маркетинговых акций </span></li>
+                </ul>
+                <ul class="block-info__list">
+                    <li class="block-info__item"><span><b>Потеря данных</b> и резервных копий</span></li>
+                </ul>
+                <ul class="block-info__list">
+                    <li class="block-info__item"><span><b>Нарушение работоспособности систем,</b> включая CRM и
+                            ERP</span></li>
+                </ul>
+                <ul class="block-info__list">
+                    <li class="block-info__item"><span><b>Кража заявок</b> конкурентами</span></li>
+                </ul>
+                <ul class="block-info__list">
+                    <li class="block-info__item"><span><b>Полная остановка работы</b> IT-инфраструктуры компании</span>
+                    </li>
+                </ul>
+                <ul class="block-info__list">
+                    <li class="block-info__item"><span><b>Блокировка вашего сайта</b> при поисковых запросах так, чтобы
+                            у клиентов
+                            он не отображался </span></li>
+                </ul>
+                <ul class="block-info__list">
+                    <li class="block-info__item"><span><b>Подделка информации</b> о товарах, заявках, сроках</span></li>
+                </ul>
+                <ul class="block-info__list">
+                    <li class="block-info__item"><span><b>Взлом электронной подписи руководителя,</b> подача ложной
+                            отчетности в налоговую, участие в заведомо невыполнимых аукционах, открытие филиалов
+                            и отмыв денег через них с доначислением налогов и выставление штрафов компании</span></li>
+                </ul>
+                <ul class="block-info__list">
+                    <li class="block-info__item"><span>Фактическая <b>кража денег со счетов</b></span></li>
+                </ul>
+                <ul class="block-info__list">
+                    <li class="block-info__item"><span><b>Взлом соцсетей,</b> мессенджеров — слив денег на рекламу,
+                            удаление аккаунта, спам, жалобы на контент и др.</span></li>
+                </ul>
+                <ul class="block-info__list">
+                    <li class="block-info__item"><span><b>Риск проверок от Роспромнадзора</b> по персональным
+                            данным</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="danger-info__title">Злоумышленники, которые проводят атаки, могут уничтожить все резервные копии,
+            зашифровать данные и шантажировать владельца требованием выкупа с 5-6-значными суммами.
+        </div>
+        <div class="danger-info__text" data-aos="fade-up">Не допустите такой ситуации в своем бизнесе.<br>
+            <b>Заказывайте аутсорсинг сейчас и обезопасьте себя.</b>
+        </div>
+        <div class="button-box">
+            <button class="button popup-link" data-href="feedback" type="button">Заказать аутсорсинг информационной
+                безопасности
+            </button>
+        </div>
+    </div>
+</section>
+        <section class="solutions">
+    <div class="container">
+        <div class="title" data-aos="flip-right">
+            Вы получите комплекс индивидуальных решений для информационной безопасности по трем категориям —
+            <span>правовой,
+                технической и организационной</span>
+        </div>
+        <div class="solutions__text">
+            Мы сразу определяем риски информационной безопасности для бизнеса и <b>предлагаем решения, как их можно
+                снизить, а потом внедряем комплексно процессы защиты.</b>
+        </div>
+        <div class="block-info --block-info-bg">
+            <p class="block-info__title">Вы получите:
+            </p>
+            <div class="block-info__wrapper" data-aos="fade-up">
+                <ul class="block-info__list">
+                    <li class="block-info__item"><span>Бухгалтерский учет</span></li>
+                </ul>
+                <ul class="block-info__list">
+                    <li class="block-info__item"><span>Управленческий учет</span></li>
+                </ul>
+                <ul class="block-info__list">
+                    <li class="block-info__item"><span>Каналы привлечения клиентов и маркетинговые инструменты:
+                            сайты, соцсети, рекламные кабинеты, мессенджеры</span></li>
+                </ul>
+                <ul class="block-info__list">
+                    <li class="block-info__item"><span>Сервисы для сбора заявок в CRM-системах</span></li>
+                </ul>
+                <ul class="block-info__list">
+                    <li class="block-info__item"><span>ERP-система, документооборот, складская система, системы
+                            управления производством (MES, SCADA, АСУ)</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="button-box">
+            <button class="button popup-link" data-href="feedback">Оставить заявку</button>
+        </div>
+    </div>
+</section>
+        <section class="security">
+    <div class="container">
+        <h3 class="title" data-aos="fade-up">
+            Компания Ovodov Cyber Security с 2011 года обеспечивает информационную безопасность компаниям в России
+        </h3>
+        <div class="security__wrapper">
+            <div class="security__inner">
+                <p class="security__title"><b>Компания Ovodov Cyber Security на рынке с 2011 года.</b></p>
+                <p class="security__subtitle" data-aos="fade-down">За это время мы выстроили системы защиты для более 500 компаний в 15
+                    регионах России, включая
+                    компании
+                    с несколькими тысячами рабочих мест и
+                    государственные организации.</p>
+            </div>
+            <div class="security__img-box">
+                <img src="img/image1.png" alt="image">
+            </div>
+        </div>
+    </div>
+    <div class="security-count">
+        <div class="container">
+            <div class="security-counter__wrapper">
+                <div class="security-counter__item">
+                    <div class="security-counter"><span class="security-counter__counter" id="1" data-max="11">1</span> лет
+                    </div>
+                    <div class="security-counter__text">Успешной практики. Большой опыт и накопленная экспертиза в сфере
+                        ИБ
+                    </div>
+                </div>
+                <div class="security-counter__item">
+                    <div class="security-counter"><span class="security-counter__counter" id="2" data-max="3000">2477</span>
+                    </div>
+                    <div class="security-counter__text">Реализованных проектов по ИБ на всей территории РФ
+                    </div>
+                </div>
+                <div class="security-counter__item">
+                    <div class="security-counter"><span class="security-counter__counter" id="3" data-max="75">11</span> %</div>
+                    <div class="security-counter__text">От общего числа клиентов сотрудничают с нами более 5 лет
+                    </div>
+                </div>
+                <div class="security-counter__item">
+                    <div class="security-counter"><span class="security-counter__counter" id="4" data-max="100">15</span> %
+                    </div>
+                    <div class="security-counter__text">Успешное прохождение проверок контролирующими органами
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="security-tools">
+    <div class="container">
+        <h3 class="title" data-aos="fade-up">
+            В работе мы используем проверенные инструменты для защиты данных и доступов
+        </h3>
+        <ul class="security-tools__list" data-aos="fade-down">
+            <li class="security-tools__list-item">
+                Средства централизованного управления учетными записями пользователей
+            </li>
+            <li class="security-tools__list-item">
+                NGFW/ZTNA, микросегментация сети
+            </li>
+            <li class="security-tools__list-item">
+                IDS сетевые и хостовые сенсоры внутри сети
+            </li>
+            <li class="security-tools__list-item">
+                Антивирусы нового поколения с централизованным управлением
+                SIEM, NTA/network flow
+            </li>
+            <li class="security-tools__list-item">
+                Инструменты инвентаризации ПО, ПАК
+            </li>
+        </ul>
+        <p class="security-tools__text">
+            Все это позволяет нам <b>максимально обеспечить защиту информации,</b> информационную безопасность и выполнение
+            требований законодательства на предприятиях и в государственных организациях.
+        </p>
+        <div class="button-box">
+            <button class="button popup-link" data-href="feedback">Оставить заявку</button>
+        </div>
+    </div>
+</section>
+        <section class="serteficate">
+    <div class="container">
+        <h4 class="title" data-aos="fade-up">
+            Среди наших клиентов крупные торговые, производительные, инжиниринговые компании,
+            <span>и вот что они говорят</span>
+        </h4>
+
+        <div class="swiper">
+            <div class="swiper-wrapper" data-aos="fade-down">
+
+                <div class="swiper-slide">
+                    <div class="image-box">
+                        <a data-fslightbox href="img/serteficate/1.jpg"><img data-src="img/serteficate/1.jpg"
+                                src="img/serteficate/1x1.png" class="swiper-lazy" alt="serteficate"></a>
+                        <div class="swiper-lazy-preloader">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-box">
+                        <a data-fslightbox href="img/serteficate/2.jpg"><img data-src="img/serteficate/2.jpg"
+                                src="img/serteficate/1x1.png" class="swiper-lazy" alt="serteficate"></a>
+                        <div class="swiper-lazy-preloader">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-box">
+                        <a data-fslightbox href="img/serteficate/3.jpg"><img data-src="img/serteficate/3.jpg"
+                                src="img/serteficate/1x1.png" class="swiper-lazy" alt="serteficate"></a>
+                        <div class="swiper-lazy-preloader">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-box">
+                        <a data-fslightbox href="img/serteficate/4.jpg"><img data-src="img/serteficate/4.jpg"
+                                src="img/serteficate/1x1.png" class="swiper-lazy" alt="serteficate"></a>
+                        <div class="swiper-lazy-preloader">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-box">
+                        <a data-fslightbox href="img/serteficate/5.jpg"><img data-src="img/serteficate/5.jpg"
+                                src="img/serteficate/1x1.png" class="swiper-lazy" alt="serteficate"></a>
+                        <div class="swiper-lazy-preloader">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-box">
+                        <a data-fslightbox href="img/serteficate/6.jpg"><img data-src="img/serteficate/6.jpg"
+                                src="img/serteficate/1x1.png" class="swiper-lazy" alt="serteficate"></a>
+                        <div class="swiper-lazy-preloader">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-box">
+                        <a data-fslightbox href="img/serteficate/7.jpg"><img data-src="img/serteficate/7.jpg"
+                                src="img/serteficate/1x1.png" class="swiper-lazy" alt="serteficate"></a>
+                        <div class="swiper-lazy-preloader">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-box">
+                        <a data-fslightbox href="img/serteficate/8.jpg"><img data-src="img/serteficate/8.jpg"
+                                src="img/serteficate/1x1.png" class="swiper-lazy" alt="serteficate"></a>
+                        <div class="swiper-lazy-preloader">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-box">
+                        <a data-fslightbox href="img/serteficate/9.jpg"><img data-src="img/serteficate/9.jpg"
+                                src="img/serteficate/1x1.png" class="swiper-lazy" alt="serteficate"></a>
+                        <div class="swiper-lazy-preloader">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-box">
+                        <a data-fslightbox href="img/serteficate/10.jpg"><img data-src="img/serteficate/10.jpg"
+                                src="img/serteficate/1x1.png" class="swiper-lazy" alt="serteficate"></a>
+                        <div class="swiper-lazy-preloader">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-box">
+                        <a data-fslightbox href="img/serteficate/11.jpg"><img data-src="img/serteficate/11.jpg"
+                                src="img/serteficate/1x1.png" class="swiper-lazy" alt="serteficate"></a>
+                        <div class="swiper-lazy-preloader">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+    </div>
+</section>
+        <section class="partners">
+    <div class="container">
+        <h3 class="title">
+            Являемся дистрибьюторами и партнерами
+        </h3>
+        <div class="partners__wrapper">
+            <div class="partners-item" data-aos="fade-up"
+            data-aos-duration="1000">
+                <img class="partners-item__img" src="img/partners/1.png" alt="image">
+            </div>
+            <div class="partners-item" data-aos="fade-up"
+            data-aos-duration="1000">
+                <img class="partners-item__img" src="img/partners/2.png" alt="image">
+            </div>
+            <div class="partners-item" data-aos="fade-up"
+            data-aos-duration="1000">
+                <img class="partners-item__img" src="img/partners/3.png" alt="image">
+            </div>
+            <div class="partners-item" data-aos="fade-up"
+            data-aos-duration="1000">
+                <img class="partners-item__img" src="img/partners/4.png" alt="image">
+            </div>
+            <div class="partners-item" data-aos="fade-up"
+            data-aos-duration="1000">
+                <img class="partners-item__img" src="img/partners/5.png" alt="image">
+            </div>
+            <div class="partners-item" data-aos="fade-up"
+            data-aos-duration="1200">
+                <img class="partners-item__img" src="img/partners/6.png" alt="image">
+            </div>
+            <div class="partners-item" data-aos="fade-up"
+            data-aos-duration="1200">
+                <img class="partners-item__img" src="img/partners/7.png" alt="image">
+            </div>
+            <div class="partners-item" data-aos="fade-up"
+            data-aos-duration="1200">
+                <img class="partners-item__img" src="img/partners/8.png" alt="image">
+            </div>
+            <div class="partners-item" data-aos="fade-up"
+            data-aos-duration="1200">
+                <img class="partners-item__img" src="img/partners/9.png" alt="image">
+            </div>
+            <div class="partners-item" data-aos="fade-up"
+            data-aos-duration="1200">
+                <img class="partners-item__img" src="img/partners/10.png" alt="image">
+            </div>
+            <div class="partners-item" data-aos="fade-up"
+            data-aos-duration="1400">
+                <img class="partners-item__img" src="img/partners/11.png" alt="image">
+            </div>
+            <div class="partners-item" data-aos="fade-up"
+            data-aos-duration="1400">
+                <img class="partners-item__img" src="img/partners/12.png" alt="image">
+            </div>
+            <div class="partners-item" data-aos="fade-up"
+            data-aos-duration="1400">
+                <img class="partners-item__img" src="img/partners/13.png" alt="image">
+            </div>
+            <div class="partners-item" data-aos="fade-up"
+            data-aos-duration="1400">
+                <img class="partners-item__img" src="img/partners/14.png" alt="image">
+            </div>
+            <div class="partners-item" data-aos="fade-up"
+            data-aos-duration="1400">
+                <img class="partners-item__img" src="img/partners/15.png" alt="image">
+            </div>
+            <div class="partners-item" data-aos="fade-up"
+            data-aos-duration="1600">
+                <img class="partners-item__img" src="img/partners/16.png" alt="image">
+            </div>
+            <div class="partners-item" data-aos="fade-up"
+            data-aos-duration="1600">
+                <img class="partners-item__img" src="img/partners/17.png" alt="image">
+            </div>
+            <div class="partners-item" data-aos="fade-up"
+            data-aos-duration="1600">
+                <img class="partners-item__img" src="img/partners/18.png" alt="image">
+            </div>
+            <div class="partners-item" data-aos="fade-up"
+            data-aos-duration="1600">
+                <img class="partners-item__img" src="img/partners/19.png" alt="image">
+            </div>
+            <div class="partners-item" data-aos="fade-up"
+            data-aos-duration="1600">
+                <img class="partners-item__img" src="img/partners/20.png" alt="image">
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="warranty">
+    <div class="container">
+        <h3 class="title">Финансовые гарантии</h3>
+        <div class="warranty__wrapper">
+            <div class="warranty__img-box">
+                <img src="img/warranty.png" alt="img">
+            </div>
+            <div class="warranty__inner" data-aos="fade-up">
+                <p class="warranty__subtitle">
+                    Мы настолько уверены в качестве своей работы, что заключая Договор с клиентом, прописываем границы
+                    допустимых финансовых потерь для его компании.
+                </p>
+                <p class="warranty__subtitle">
+                    <b>Мы гарантируем, что при инциденте снизим потери до приемлемого уровня. Если это условие не будет
+                        выполнено —
+                        мы несем штрафные санкции.</b>
+                </p>
+                <p class="warranty__subtitle">
+                    Также <b>мы прописываем в договоре финансовую гарантию,</b> компенсации штрафов и устранения
+                    предписаний
+                    Центрального Банка России, ФСТЭК, ФСБ, Роскомнадзора, Прокуратуры за наш счет.
+                </p>
+            </div>
+        </div>
+        <div class="warranty__pc">
+            <div class="warranty__wrapper">
+                <div class="warranty__inner" data-aos="fade-down">
+                    <p class="warranty__subtitle">
+                        <span>P.S. </span>В 2022 без информационной безопасности, вы рискуете потерять бизнес.
+                        Одна ошибка в контракте, одна слитая конфиденциальная
+                        информация, доступ к одной внутренней системе может
+                        уничтожить бизнес или создать большие финансовые
+                        и репутационные проблемы.
+                    </p>
+                    <p class="warranty__subtitle">
+                        Не допустите этого. <b>Обеспечьте информационную
+                            безопасность своему бизнесу уже сейчас.</b>
+                    </p>
+                </div>
+                <div class="warranty__img-box">
+                    <img src="img/warranty2.png" alt="img">
+                </div>
+            </div>
+            <div class="button-box">
+                <button class="button popup-link" data-href="feedback" type="button">Оставить заявку
+                </button>
+            </div>
+        </div>
+</section>
+        <footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer">
+                <a class="logo__link link__logo" href="#"><img src="img/footer.png" alt="Логотип"></a>
+            </div>
+            <div class="footer__text">
+                © 2021 OVODOV.SU
+            </div>
+            <a class="call footer-call" href="tel:79997778899">
+                <svg class="call__icon" fill="#C9262A" width="22" height="22" viewBox="0 0 22 22" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M11 0C4.92532 0 0 4.92532 0 11C0 17.0747 4.92532 22.0001 11 22.0001C17.0748 22.0001 22 17.0746 22 11C22 4.92532 17.0748 0 11 0ZM16.8088 16.0503L15.928 16.9312C15.7708 17.0882 15.3104 17.1862 15.2956 17.1862C12.5093 17.2105 9.82648 16.1161 7.85532 14.1447C5.87876 12.167 4.78304 9.47468 4.81247 6.67898C4.81247 6.67772 4.91331 6.23047 5.07042 6.07486L5.95112 5.19402C6.27341 4.87023 6.8925 4.72392 7.32618 4.86901L7.51145 4.93081C7.94387 5.07577 8.39787 5.55389 8.51734 5.99438L8.96037 7.6204C9.07985 8.06216 8.9187 8.69064 8.59651 9.01292L8.00843 9.60109C8.58581 11.7386 10.2629 13.416 12.4008 13.9948L12.9886 13.4065C13.3124 13.0827 13.9406 12.9217 14.3815 13.041L16.0073 13.4856C16.4478 13.6067 16.9259 14.0578 17.0708 14.4901L17.1326 14.678C17.2762 15.1105 17.131 15.7295 16.8088 16.0503Z"
+                        fill="#C9262A" />
+                </svg>
+                <div class="call__text">Заказать звонок</div>
+            </a>
+        </div>
+    </div>
+</footer>
+
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/fslightbox.js"></script>
+</body>
+
+</html>
